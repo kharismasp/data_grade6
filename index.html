@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4eb">
+  <meta name="description" content="An interactive Cambridge Stage 6 lesson on averages, range and reading data.">
+  <title>The Data Lab • Averages &amp; Data Detective</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="lessons.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to the lesson</a>
+  <header class="topbar">
+    <a class="brand" href="#explorer" aria-label="The Data Lab home">
+      <span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>The Data Lab</span>
+    </a>
+    <div class="top-label">Averages &amp; Data Detective</div>
+    <div class="top-actions">
+      <button class="top-button" id="terms-button" type="button">Key terms</button>
+      <button class="top-button teacher-button" id="teacher-button" type="button">Teacher notes</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Lesson sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-head">
+          <span class="micro">CAMBRIDGE STAGE 6</span>
+          <strong>Garden trail</strong>
+        </div>
+        <nav id="topic-nav" aria-label="Lesson topics"></nav>
+        <div class="progress-card">
+          <div class="progress-top"><strong>Stories solved</strong><span id="progress-text">0 / 24</span></div>
+          <progress id="progress-bar" max="24" value="0" aria-label="Practice progress"></progress>
+        </div>
+      </div>
+    </aside>
+
+    <main class="lesson" id="content" tabindex="-1">
+      <div id="lesson-root"></div>
+      <noscript>This lesson needs JavaScript for the visual activities and answer checking.</noscript>
+    </main>
+  </div>
+
+  <dialog id="guide-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top">
+      <h2 id="dialog-title"></h2>
+      <form method="dialog"><button class="close-button" type="submit" aria-label="Close">×</button></form>
+    </div>
+    <div id="dialog-body"></div>
+  </dialog>
+</body>
+</html>
